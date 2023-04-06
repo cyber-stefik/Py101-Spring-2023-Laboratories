@@ -12,10 +12,10 @@ import os
 
 def test_task(number):
     
-    with open("tests/out/test_1.out") as f:
+    with open(f"tests/out/test_{number}.out") as f:
         output = f.readlines()
 
-    with open("tests/ref/test_1.ref") as f:
+    with open(f"tests/ref/test_{number}.ref") as f:
         ref = f.readlines()
 
     if output == ref:
