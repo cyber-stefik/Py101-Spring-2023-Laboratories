@@ -132,7 +132,7 @@ if __name__ == '__main__':
     sys.stdout = open("tests/out/test_8.out", 'w')
     for product in store.view_cart('pavelintruder1'):
         print(product)
-    print()
+    # print()
     for product in store.stock.view():
         print(product)
     sys.stdout = original_stdout
@@ -145,7 +145,7 @@ if __name__ == '__main__':
     sys.stdout = open("tests/out/test_9.out", 'w')
     for product in store.customer_carts['batgirl123'].view():
         print(product)
-    print()
+    # print()
     for product in store.stock.view():
         print(product)
     sys.stdout = original_stdout
